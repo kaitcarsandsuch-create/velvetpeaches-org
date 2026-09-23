@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Velvet</title>
+  <meta name="description" content="This site opens the house app." />
+  <meta name="robots" content="index,follow" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23110c0a'/><circle cx='32' cy='34' r='14' fill='%23c46a4a'/></svg>" />
+  <style>
+    :root {
+      --bg: #110c0a;
+      --ink: #f4ebe3;
+      --mute: #b7a89c;
+      --peach: #d47855;
+      --peach-soft: #e8b39a;
+      --glass: rgba(244, 235, 227, 0.06);
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+    }
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2.5rem 1.25rem;
+      background:
+        radial-gradient(900px 480px at 50% -10%, rgba(212, 120, 85, 0.18), transparent 60%),
+        radial-gradient(700px 400px at 80% 110%, rgba(90, 40, 28, 0.45), transparent 55%),
+        var(--bg);
+    }
+    main {
+      width: min(34rem, 100%);
+      text-align: center;
+    }
+    .eyebrow {
+      margin: 0 0 0.85rem;
+      font-family: ui-sans-serif, system-ui, sans-serif;
+      font-size: 0.72rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--peach-soft);
+    }
+    h1 {
+      margin: 0 0 0.75rem;
+      font-weight: 500;
+      font-size: clamp(2.4rem, 7vw, 3.6rem);
+      letter-spacing: -0.03em;
+      line-height: 0.95;
+    }
+    .line {
+      margin: 0 0 2rem;
+      color: var(--mute);
+      font-size: 1.05rem;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.9rem 1.55rem;
+      border-radius: 999px;
+      background: var(--peach);
+      color: #1a0f0c;
+      text-decoration: none;
+      font-family: ui-sans-serif, system-ui, sans-serif;
+      font-size: 0.92rem;
+      font-weight: 650;
+      letter-spacing: 0.02em;
+    }
+    .btn:hover { filter: brightness(1.06); }
+    .btn:focus-visible {
+      outline: 2px solid var(--peach-soft);
+      outline-offset: 3px;
+    }
+    footer {
+      margin-top: 3.25rem;
+      font-family: ui-sans-serif, system-ui, sans-serif;
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      color: var(--mute);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">The Okanagan Velvet Peaches</p>
+    <h1>Velvet</h1>
+    <p class="line">This site opens the house app.</p>
+    <a class="btn" href="https://drive.google.com/file/d/1tuMaCGS83v50lsxdSIqpC4brPLJFUytd/view" rel="noopener">Open Velvet</a>
+  </main>
+  <footer>18+ · Vernon, BC</footer>
+</body>
+</html>
